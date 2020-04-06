@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Header from './components/Header';
 import ShopPage from './pages/ShopPage';
+import AuthPage from './pages/AuthPage';
 import './styles/App.scss';
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
+        <Route path='/signin' component={AuthPage} />
       </Switch>
     </div>
   );
